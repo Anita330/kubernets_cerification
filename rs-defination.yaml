@@ -1,0 +1,26 @@
+# kubectl replace -f replicatset-defination.yaml
+# kubectl scale --replicas=6 -f replication-defination.yaml
+  # kubectl scale --replicas=6 replicaset myapp-replicaset
+    # kubectl edit rs nameofreplicaset
+    #kubectl edit rs replicaset 
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp
+  labels:
+    app: myapp
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: myapp
+        image: busybox
