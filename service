@@ -1,0 +1,4 @@
+kubectl describe service servicename
+kubectl get service
+kubectl get svc 
+ kubectl expose pod httpd --port=80 --type=ClusterIP --name=httpd

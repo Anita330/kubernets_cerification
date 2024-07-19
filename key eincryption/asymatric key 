@@ -1,0 +1,10 @@
+openssl genrsa -out my-bank.key 1024
+ #generate public key 
+
+ openssl genrsa -out my-bank.key -pubout > mybank.pem 
+
+
+ Q.1 how to encrypte EBS volume with right mount point.
+ Q.2 after disable the public access from s3 , how to give the access to user using CDN and 
+ Q.3 after remove the public ip , keep the instance behind the load balancer for better access
+ Q. 4 

@@ -1,0 +1,7 @@
+Solution that support network policy
+* kube-router 
+* Calico 
+* Romana
+* Weave-net 
+Solution that do not support networlk policy 
+* Flannel

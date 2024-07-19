@@ -1,0 +1,15 @@
+ip link (to list and modify interfaces)
+ip addr (to see assign the ip to host the interfaces)
+id addr add ip /24 dev eth0 (to dd the ip in interfaces)
+ip route (to see the route)
+ip route add ipaddress via another ip 
+to see ip forwording is enable in a host 
+cat /proc/sys/net/ip_forward  1 
+ 
+ Linux bridge
+ ip link set veth-red nets red 
+ ip link set veth-red-br master v-net-o
+
+ ip link set veth-blue nets red 
+ ip link set veth-blue-br master v-net-o
+ip -n red addr add 192.168.1.10/24 dev veth-red

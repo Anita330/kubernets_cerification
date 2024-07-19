@@ -1,0 +1,17 @@
+kubectl get role
+kubectl get rolebindings
+kubectl describe rolebindings username 
+kubectl describe rolebinding kube-proxy -n kube-system
+#to check the access
+kubcetl auth can-i create deployment 
+kubcetl auth can-i delete node 
+kubectl auth can-i list pod --as dev-user
+kubectl create role pod-reader --verb=get --verb=list --verb=watch --resource=pods
+kubectl create role developer --verb=list,create,delete --resource=pods --resource-name=readablepod --resource-name=anotherpod
+ kubectl create rolebinding dev-user-binding --role=developer --user=dev-user
+
+ ----------------------------------------
+ kubectl api-resources --namespaced=true
+
+
+ kubectl create clusterrole michelle --verb=get,list,watch,create --resource=nodes

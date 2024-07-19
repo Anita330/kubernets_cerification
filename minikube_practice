@@ -1,0 +1,14 @@
+root@azureuser:~# kubectl get po -A
+NAMESPACE     NAME                               READY   STATUS    RESTARTS        AGE
+kube-system   coredns-5dd5756b68-klpbh           1/1     Running   0               3m8s
+kube-system   etcd-minikube                      1/1     Running   0               3m20s
+kube-system   kube-apiserver-minikube            1/1     Running   0               3m20s
+kube-system   kube-controller-manager-minikube   1/1     Running   0               3m20s
+kube-system   kube-proxy-2ppmj                   1/1     Running   0               3m8s
+kube-system   kube-scheduler-minikube            1/1     Running   0               3m22s
+kube-system   storage-provisioner                1/1     Running   1 (2m37s ago)   3m17s
+
+kublet cheatsheet
+
+kubectl run nginx --image nginx 
+kubectl run redis --image=redis123 --dry-run -o yaml > redis.yaml 

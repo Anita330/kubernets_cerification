@@ -1,0 +1,14 @@
+iptabels -L -t nat | grep db-service
+
+kubectl exec hr -- nslookup mysql.payroll
+
+kubectl create configmap    nginx-configuration -n ingress-space
+
+kubectl create serviceaccount ingress-serviceaccount -n ingress-space
+
+cat /etc/systemd/system/kube-apiserver.service
+
+https://github.com/mmumshad/kubernetes-the-hard-way
+
+https://www.youtube.com/watch?v=uUupRagM7m0&list=PL2We04F3Y_41jYdadX55fdJplDvgNGENo
+

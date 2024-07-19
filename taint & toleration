@@ -1,0 +1,3 @@
+kubectl taint nodes node-name key=value:taint-effect
+kubectl taint nodes node1 app=blue:noSchudule 
+kubectl taint nodes node01 spray=mortein:NoSchedule

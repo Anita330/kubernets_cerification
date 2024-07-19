@@ -1,0 +1,4 @@
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/#claims-as-volumes
+
+kubectl get persistentvolume 
+kubectl exec webapp -- cat /log/app.log

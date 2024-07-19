@@ -1,0 +1,12 @@
+check note status 
+kubectl get node
+kubectl get pod
+1. service kube-apiserver status 
+2. service kube-controller-manager status 
+3. service kube-scheduler status
+4. Service kublet status 
+5. service kube-proxy status 
+6. 
+check the log of kube-apiserver-master -n kube-system
+sudo journctl -n kube-system
+

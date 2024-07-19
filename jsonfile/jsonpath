@@ -1,0 +1,15 @@
+cat q1.json | jpath $.property1
+cat q2.json | jpath $.bus
+
+ cat q3.json | jpath $.bus.price
+ cat q4.json | jpath $.vehicles.car.price
+ cat q5.json | jpath $.car.wheels
+cat q5.json | jpath $.car.wheels[2]
+cat q5.json | jpath $.car.wheels[2].model
+cat q8.json | jpath $.employee.payslips
+cat q8.json | jpath $.employee.payslips[2]
+cat q8.json | jpath $.employee.payslips[2].amount
+cat q11.json | jpath $.prizes[5].laureates[1]
+
+cat q12.json | jpath $[0]
+cat q12.json | jpath '$[0,3]'

@@ -1,0 +1,15 @@
+kubectl set image deploy frontend (containername)  sample-webapp(imagename)= kodecloud/webapp-colour:v2
+kubectl replace --force -f path of file 
+
+controlplane ~ ➜  kubectl create configmap webapp-config-map --f
+rom-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
+encode the value
+echo -n 'mysql' | base64 
+echo -n 'root' | base64 
+echo -n 'passwd' | base64
+decode the value
+echo -n 'abscfd=' | base64 --decode
+
+echo -n 'fjbf=' | base64 --decode
+
+kubectl create secret generic db-secret --from-literal=DB_Host=sql01 --from-literal DB_User=root --from-literal DB_Password=password123

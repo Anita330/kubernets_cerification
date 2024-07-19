@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Daemonset
+metadata:
+  creationTimestamp: null
+  labels:
+    app: elasticsearch
+  name: elasticsearch
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: elasticsearch
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: elasticsearch
+    spec:
+      containers:
+      - image: docker.io/rancher/mirrored-flannelcni-flannel:v0.19.2
+        name: mirrored-flannelcni-flannel
+        resources: {}
+status: {}

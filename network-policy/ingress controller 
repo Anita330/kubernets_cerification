@@ -1,0 +1,16 @@
+GCP HTTP(s)
+Load balancer (GCE)
+nginx 
+HAProxy
+Istio 
+ to create the ngnix ingress controller few this is requiered
+ 1.service accounts
+ 2. config ConfigMap
+ 3. authentication
+ 4. deployments 
+
+ kubectl create ingress <ingress-name> --rule="host/path=service:port"
+ https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-ingress-em-
+ https://kubernetes.github.io/ingress-nginx/examples/
+ https://kubernetes.github.io/ingress-nginx/examples/rewrite/
+ 

@@ -1,0 +1,11 @@
+while installing minikube on ubuntu facing error that docker driver is not working 
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+minikube start
+
+face error 
+https://minikube.sigs.k8s.io/docs/drivers/docker/
+
+minikube start --driver=docker --force
+

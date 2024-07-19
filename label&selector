@@ -1,0 +1,7 @@
+kubectl get pod --show-labels
+kubectl get pod -l 'env=dev'
+kubectl get pod -l 'bu=finance'
+kubectl get pod --selector env=dev | wc -l 
+kubectl get all --selector env=prod 
+kubectl get all --selector env=prod,bu=finance,tier=frontend 
+

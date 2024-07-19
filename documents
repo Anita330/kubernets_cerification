@@ -1,3 +1,24 @@
 https://kubernetes.io/docs/concepts/overview/kubernetes-api/
 https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api-conventions.md
 https://github.com/kubernetes/community/blob/master/contributors/devel/sig-architecture/api_changes.md
+
+
+kubadm upgrade 
+apt-get upgrade -y kubelet=version
+systemctl restart kubelet
+kubectl drain node01
+kubectl uncordon node01
+
+sudo apt-mark unhold kubeadm && \
+sudo apt-get update && sudo apt-get install -y kubeadm='1.29.0-00' && \
+sudo apt-mark hold kubeadm 
+
+
+sudo apt-get update && sudo apt-get install -y kubelet='1.29.0-00' kubectl='1.29.0-00' && \
+sudo apt-mark hold kubelet kubectl
+
+sudo apt-get update && sudo apt-get install -y kubeadm='1.29.0' && \
+sudo apt-mark hold kubeadm
+
+
+8180938281

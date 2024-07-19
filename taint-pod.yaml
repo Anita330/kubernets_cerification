@@ -9,7 +9,7 @@ spec:
   - name: nginx
     image: nginx
   tolerations:
-  - key: "app"
+  - key: "spray"
     operator: "Equal"
-    value: "blue"
+    value: "mortein"
     effect: "NoSchedule"

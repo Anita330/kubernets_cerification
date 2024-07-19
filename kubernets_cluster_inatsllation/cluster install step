@@ -24,6 +24,10 @@ sudo apt-get install -y kubelet=1.29.0-1.1 kubeadm=1.29.0-1.1 kubectl=1.29.0-1.1
 sudo apt-mark hold kubelet kubeadm kubectl
 
 
+bootstrap kubernets cluster 
+kubeadm init --apiserver-advertise-address=192.4.107.10 --pod-network-cidr=10.244.0.0/16
+
+
 To start using your cluster, you need to run the following as a regular user:
 
   mkdir -p $HOME/.kube

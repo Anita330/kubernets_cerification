@@ -1,0 +1,29 @@
+curl -v -k https://master-node-ip:6443/api/v1/pods -u "user1:passwd"
+
+
+    aws cloudtrail lookup-events \
+        --start-time "2022-06-02T16:13:15Z" \
+        --end-time "2022-06-02T16:13:16Z"
+
+
+2018/03/15 19:20:35
+
+2024-01-15T19:20:34+05:30 — 2024-01-15T19:20:35+05:30
+
+
+2022-06-02T16:13:16Z
+
+
+DTI_prod-prod 118 
+DTI_Non-prod-dev 84
+DTI_Callcenter_RDS_prod 9
+cisInfosec_NonProd 16 
+DTI_ss_prod 8 
+118+84+9+16+8=235 
+
+
+certifecate (public key)
+*.cert , *.pem
+
+private key 
+*.key , *-key.pem

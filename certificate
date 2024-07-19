@@ -1,0 +1,5 @@
+apiserver cert path 
+/etc/kubernets/pki/apiserver.crt
+#to see the cert 
+openssl x509 -in /etc/kubernets/pki/apiserver.crt -text -noout  
+

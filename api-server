@@ -1,0 +1,13 @@
+cat /etc/kubernetes/manifests/kube-apiserver.yaml 
+view api server option
+cat /etc/systemd/system/kube-apiserver.service
+ps -aux | grep kube-apiserver  
+cat /etc/kubernets/manifest/kube-control-manager.yaml
+
+# view kube-schudule options-kubeadm
+cat /etc/kubernets/manifest/kube-schudule.yaml
+
+ps -aux | grep kube-schuduler 
+
+# kublet
+ps -aux | grep kublet
